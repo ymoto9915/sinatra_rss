@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>al jazeeraのRSS</title>
+</head>
+<body>
+<h1>al jazeeraのRSS</h1>
+<ul>
+  <% @feed.items.each do |item| %>
+    <li><a href="<%= item.link %>">
+      <%= item.title %></a>
+    </li>
+  <% end %>
+</ul>
+</body>
+</html>
